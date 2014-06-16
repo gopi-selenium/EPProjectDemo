@@ -1,0 +1,418 @@
+<html>
+<head>
+<title>com.atmecs.EmployeeManagementTest.story_runner</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="com/atmecs/EmployeeManagementTest/story_runner.story" title="Sample story">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">communicate effectively to the business some functionality</inOrderTo>
+  <asA keyword="As a">development team</asA>
+  <iWantTo keyword="I want to">use Behaviour-Driven Development</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="A scenario Insert A data in Employee Table but it missing a Last Name , Department Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Enter Employee Details as &quot;Himansu&quot; &quot;&quot; &quot;&quot; &quot;&quot;<failure>ServerStatusException 
+	data: ASObject(391830888){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details Entered as &quot;Himansu&quot; &quot;&quot; &quot;&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="A scenario Insert A data in Employee Table but it missing a First Name ,Department Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Enter Employee Details as &quot;&quot; &quot;Gupta&quot; &quot;&quot; &quot;&quot;<failure>ServerStatusException 
+	data: ASObject(607318565){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details Entered as &quot;&quot; &quot;Gupta&quot; &quot;&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="A scenario Insert A data in Employee Table but it missing a First Name ,Last Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Enter Employee Details as &quot;&quot; &quot;&quot; &quot;QA&quot; &quot;&quot;<failure>ServerStatusException 
+	data: ASObject(223709652){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details Entered as &quot;&quot; &quot;&quot; &quot;QA&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="A scenario Insert A data in Employee Table but it missing a First Name ,Last Name and Department Name">
+<step outcome="failed" keyword="FAILED">When I Enter Employee Details as &quot;&quot; &quot;&quot; &quot;&quot; &quot;ENGINEER&quot;<failure>ServerStatusException 
+	data: ASObject(806724243){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details Entered as &quot;&quot; &quot;&quot; &quot;&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="A scenario Insert A data in Employee Table but it missing a Department Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Enter Employee Details as &quot;Himansu&quot; &quot;Gupta&quot; &quot;&quot; &quot;&quot;<failure>ServerStatusException 
+	data: ASObject(636800828){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details Entered as &quot;Himansu&quot; &quot;Gupta&quot; &quot;&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="A scenario Insert A data in Employee Table but it missing a Last Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Enter Employee Details as &quot;Himansu&quot; &quot;&quot; &quot;QA&quot; &quot;&quot;<failure>ServerStatusException 
+	data: ASObject(1965681841){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details Entered as &quot;Himansu&quot; &quot;&quot; &quot;QA&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="A scenario Insert A data in Employee Table but it missing a Last Name and Department Name">
+<step outcome="failed" keyword="FAILED">When I Enter Employee Details as &quot;Himansu&quot; &quot;&quot; &quot;&quot; &quot;ENGINEER&quot;<failure>ServerStatusException 
+	data: ASObject(130646182){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details Entered as &quot;Himansu&quot; &quot;&quot; &quot;&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="A scenario Insert A data in Employee Table but it missing a First Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Enter Employee Details as &quot;&quot; &quot;Gupta&quot; &quot;QA&quot;  &quot;&quot;<failure>ServerStatusException 
+	data: ASObject(993399025){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details Entered as &quot;&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="A scenario Insert A data in Employee Table but it missing a First Name and Department Name">
+<step outcome="failed" keyword="FAILED">When I Enter Employee Details as &quot;&quot; &quot;Gupta&quot; &quot;&quot; &quot;ENGINEER&quot;<failure>ServerStatusException 
+	data: ASObject(457668026){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details Entered as &quot;&quot; &quot;Gupta&quot; &quot;&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="A scenario Insert A data in Employee Table but it missing a  First Name and Last Name">
+<step outcome="failed" keyword="FAILED">When I Enter Employee Details as &quot;&quot; &quot;&quot; &quot;QA&quot; &quot;ENGINEER&quot;<failure>ServerStatusException 
+	data: ASObject(1855212917){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details Entered as &quot;&quot; &quot;&quot; &quot;QA&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="A scenario Insert A data in Employee Table but it missing a Designation Name">
+<step outcome="failed" keyword="FAILED">When I Enter Employee Details as &quot;Himansu&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;&quot;<failure>ServerStatusException 
+	data: ASObject(1442645587){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details Entered as &quot;Himansu&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="A scenario Insert A data in Employee Table but it missing a Department Name">
+<step outcome="failed" keyword="FAILED">When I Enter Employee Details as &quot;Himansu&quot; &quot;Gupta&quot; &quot;&quot; &quot;ENGINEER&quot;<failure>ServerStatusException 
+	data: ASObject(2041928869){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details Entered as &quot;Himansu&quot; &quot;Gupta&quot; &quot;&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="A scenario Insert A data in Employee Table but it missing a Last Name">
+<step outcome="failed" keyword="FAILED">When I Enter Employee Details as &quot;Himansu&quot; &quot;&quot; &quot;QA&quot; &quot;ENGINEER&quot;<failure>ServerStatusException 
+	data: ASObject(1136631276){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details Entered as &quot;Himansu&quot; &quot;&quot; &quot;QA&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="A scenario Insert A data in Employee Table but it missing a First Name">
+<step outcome="failed" keyword="FAILED">When I Enter Employee Details as &quot;&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;ENGINEER&quot;<failure>ServerStatusException 
+	data: ASObject(1870004792){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details Entered as &quot;&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="A scenario Insert A data in Employee Table All details">
+<step outcome="successful">When I Enter Employee Details as &quot;Himansu&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;ENGINEER&quot;</step>
+<step outcome="successful">Then Check Whether Employee Details Entered as &quot;Himansu&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing First Name, Last Name , Department Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;1&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot;<failure>ServerStatusException 
+	data: ASObject(188674936){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;1&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Employee ID, Last Name , Department Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;&quot; &quot;Himanshu&quot; &quot;&quot; &quot;&quot; &quot;&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;&quot; &quot;Himanshu&quot; &quot;&quot; &quot;&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Employee ID, First Name, Department Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;&quot; &quot;&quot; &quot;Gupta&quot; &quot;&quot; &quot;&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;&quot; &quot;&quot; &quot;Gupta&quot; &quot;&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Employee ID, First Name, Last Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;&quot; &quot;&quot; &quot;&quot; &quot;QA&quot; &quot;&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;&quot; &quot;&quot; &quot;&quot; &quot;QA&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Employee ID, First Name ,Last Name and Department Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;ENGINEER&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Last Name , Department Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;1&quot; &quot;Himanshu&quot; &quot;&quot; &quot;&quot; &quot;&quot;<failure>ServerStatusException 
+	data: ASObject(832426597){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;1&quot; &quot;Himanshu&quot; &quot;&quot; &quot;&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing First Name , Department Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;1&quot; &quot;&quot; &quot;Gupta&quot; &quot;&quot; &quot;&quot;<failure>ServerStatusException 
+	data: ASObject(766611234){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;1&quot; &quot;&quot; &quot;Gupta&quot; &quot;&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing First name Last Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;1&quot; &quot;&quot; &quot;&quot; &quot;QA&quot; &quot;&quot;<failure>ServerStatusException 
+	data: ASObject(57151564){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;1&quot; &quot;&quot; &quot;&quot; &quot;QA&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing First Name Last Name and Department Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;1&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;ENGINEER&quot;<failure>ServerStatusException 
+	data: ASObject(2041865635){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;1&quot; &quot;&quot; &quot;&quot; &quot;&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Employee ID, Department Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;&quot; &quot;Himanshu&quot; &quot;Gupta&quot; &quot;&quot; &quot;&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;&quot; &quot;Himanshu&quot; &quot;Gupta&quot; &quot;&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Employee ID, Last Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;&quot; &quot;Himanshu&quot; &quot;&quot; &quot;QA&quot; &quot;&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;&quot; &quot;Himanshu&quot; &quot;&quot; &quot;QA&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Employee ID, Last Name and Department Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;&quot; &quot;Himanshu&quot; &quot;&quot; &quot;&quot; &quot;ENGINEER&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;&quot; &quot;Himanshu&quot; &quot;&quot; &quot;&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Employee ID, First Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;&quot; &quot;&quot; &quot;Gupta&quot; &quot;QA&quot;  &quot;&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;&quot; &quot;&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Employee ID, First Name and Department Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;&quot; &quot;&quot; &quot;Gupta&quot; &quot;&quot; &quot;ENGINEER&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;&quot; &quot;&quot; &quot;Gupta&quot; &quot;&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Employee ID,  First Name and Last Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;&quot; &quot;&quot; &quot;&quot; &quot;QA&quot; &quot;ENGINEER&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;&quot; &quot;&quot; &quot;&quot; &quot;QA&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Department Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;1&quot; &quot;Himanshu&quot; &quot;Gupta&quot; &quot;&quot; &quot;&quot;<failure>ServerStatusException 
+	data: ASObject(819613959){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;1&quot; &quot;Himanshu&quot; &quot;Gupta&quot; &quot;&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Last Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;1&quot; &quot;Himanshu&quot; &quot;&quot; &quot;QA&quot; &quot;&quot;<failure>ServerStatusException 
+	data: ASObject(1215013613){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;1&quot; &quot;Himanshu&quot; &quot;&quot; &quot;QA&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Last Name and Department Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;1&quot; &quot;Himanshu&quot; &quot;&quot; &quot;&quot; &quot;ENGINEER&quot;<failure>ServerStatusException 
+	data: ASObject(171870112){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;1&quot; &quot;Himanshu&quot; &quot;&quot; &quot;&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing First Name and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;1&quot; &quot;&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;&quot;<failure>ServerStatusException 
+	data: ASObject(1884712731){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;1&quot; &quot;&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing First Name and Department Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;1&quot; &quot;&quot; &quot;Gupta&quot; &quot;&quot; &quot;ENGINEER&quot;<failure>ServerStatusException 
+	data: ASObject(1091847640){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;1&quot; &quot;&quot; &quot;Gupta&quot; &quot;&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing First Name and Last Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;1&quot; &quot;&quot; &quot;&quot; &quot;QA&quot; &quot;ENGINEER&quot;<failure>ServerStatusException 
+	data: ASObject(1822452790){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;1&quot; &quot;&quot; &quot;&quot; &quot;QA&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Employee ID and Designation Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;&quot; &quot;Himanshu&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;&quot; &quot;Himanshu&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Employee ID and Department Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;&quot; &quot;Himanshu&quot; &quot;Gupta&quot; &quot;&quot; &quot;ENGINEER&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;&quot; &quot;Himanshu&quot; &quot;Gupta&quot; &quot;&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Employee ID and Last Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;&quot; &quot;Himanshu&quot; &quot;&quot; &quot;QA&quot; &quot;ENGINEER&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;&quot; &quot;Himanshu&quot; &quot;&quot; &quot;QA&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Employee ID and First Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;&quot; &quot;&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;ENGINEER&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;&quot; &quot;&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Employee ID">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;&quot; &quot;Himanshu&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;ENGINEER&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;&quot; &quot;Himanshu&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing First Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;2&quot; &quot;&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;ENGINEER&quot;<failure>ServerStatusException 
+	data: ASObject(1810768530){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;2&quot; &quot;&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Last Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;2&quot; &quot;Himanshu&quot; &quot;&quot; &quot;QA&quot; &quot;ENGINEER&quot;<failure>ServerStatusException 
+	data: ASObject(2055812419){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;2&quot; &quot;Himanshu&quot; &quot;&quot; &quot;QA&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Department Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;2&quot; &quot;Himanshu&quot; &quot;Gupta&quot; &quot;&quot; &quot;ENGINEER&quot;<failure>ServerStatusException 
+	data: ASObject(1089682910){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;2&quot; &quot;Himanshu&quot; &quot;Gupta&quot; &quot;&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table but it is missing Designation Name">
+<step outcome="failed" keyword="FAILED">When I Update Employee Details as &quot;2&quot; &quot;Himanshu&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;&quot;<failure>ServerStatusException 
+	data: ASObject(707006819){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details are Updated as &quot;2&quot; &quot;Himanshu&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for updating data in Employee Table All details">
+<step outcome="successful">When I Update Employee Details as &quot;2&quot; &quot;Himanshu&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;ENGINEER&quot;</step>
+<step outcome="successful">Then Check Whether Employee Details are Updated as &quot;2&quot; &quot;Himanshu&quot; &quot;Gupta&quot; &quot;QA&quot; &quot;ENGINEER&quot;</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for Deleting data in Employee Table when it is missing an Employee ID">
+<step outcome="failed" keyword="FAILED">When I Delete Employee Details of &quot;&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details of &quot;&quot; is still present</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for Deleting data in Employee Table when it is having an invalid Employee ID">
+<step outcome="failed" keyword="FAILED">When I Delete Employee Details of &quot;00&quot;<failure>ServerStatusException 
+	data: ASObject(1593424881){message=java.lang.Exception : Employee has 0 Values,...., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details of &quot;00&quot; is still present</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for Deleting data in Employee Table when it is having wrong Employee ID">
+<step outcome="failed" keyword="FAILED">When I Delete Employee Details of &quot;1251&quot;<failure>ServerStatusException 
+	data: ASObject(1483910808){message=java.lang.Exception : No Such Employee ,...., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Employee Details of &quot;1251&quot; is still present</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for Deleting data in Employee Table when it is having valid Employee ID">
+<step outcome="successful">When I Delete Employee Details of &quot;9&quot;</step>
+<step outcome="failed" keyword="FAILED">Then Check Whether Employee Details of &quot;9&quot; is still present<failure>java.lang.NullPointerException</failure></step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for Transaction from one account to another but it is missing an Destination Employee eID and amount">
+<step outcome="successful">Given Account details of Employees &quot;2&quot; &quot;3&quot;</step>
+<step outcome="failed" keyword="FAILED">When I Enter Transaction Details as &quot;2&quot; &quot;&quot; &quot;&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Transaction Details as &quot;2&quot; &quot;&quot; &quot;&quot; are present</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for Transaction from one account to another but it is missing an source Employee ID and and amount">
+<step outcome="successful">Given Account details of Employees &quot;2&quot; &quot;3&quot;</step>
+<step outcome="failed" keyword="FAILED">When I Enter Transaction Details as &quot;&quot; &quot;3&quot; &quot;&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Transaction Details as &quot;&quot; &quot;3&quot; &quot;&quot; are present</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for Transaction from one account to another but it is missing an source Employee ID and Destination Employe ID">
+<step outcome="successful">Given Account details of Employees &quot;2&quot; &quot;3&quot;</step>
+<step outcome="failed" keyword="FAILED">When I Enter Transaction Details as &quot;&quot; &quot;&quot; &quot;1000&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Transaction Details as &quot;&quot; &quot;&quot; &quot;1000&quot; are present</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for Transaction from one account to another but it is missing an amount">
+<step outcome="successful">Given Account details of Employees &quot;2&quot; &quot;3&quot;</step>
+<step outcome="failed" keyword="FAILED">When I Enter Transaction Details as &quot;2&quot; &quot;3&quot; &quot;&quot;<failure>org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: </failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Transaction Details as &quot;2&quot; &quot;3&quot; &quot;&quot; are present</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for Transaction from one account to another but it is having an invalid source Employee ID">
+<step outcome="successful">Given Account details of Employees &quot;2&quot; &quot;3&quot;</step>
+<step outcome="failed" keyword="FAILED">When I Enter Transaction Details as &quot;556&quot; &quot;3&quot; &quot;1000&quot;<failure>ServerStatusException 
+	data: ASObject(1280764923){message=java.lang.Exception : Employee Id does not Exist, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Transaction Details as &quot;556&quot; &quot;3&quot; &quot;1000&quot; are present</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for Transaction from one account to another but it is having an invalid Amount">
+<step outcome="successful">Given Account details of Employees &quot;2&quot; &quot;3&quot;</step>
+<step outcome="failed" keyword="FAILED">When I Enter Transaction Details as &quot;2&quot; &quot;3&quot; &quot;-1000&quot;<failure>ServerStatusException 
+	data: ASObject(1136603367){message=java.lang.Exception : Invalid Transfer Amount, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Transaction Details as &quot;2&quot; &quot;3&quot; &quot;-1000&quot; are present</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for Transaction from one account to another but it is having more Amount than Balance Amount">
+<step outcome="successful">Given Account details of Employees &quot;3&quot; &quot;2&quot;</step>
+<step outcome="failed" keyword="FAILED">When I Enter Transaction Details as &quot;3&quot; &quot;2&quot; &quot;100000&quot;<failure>ServerStatusException 
+	data: ASObject(1709320528){message=java.lang.Exception : Insufficient Balance for this Transaction, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then Check Whether Transaction Details as &quot;3&quot; &quot;2&quot; &quot;100000&quot; are present</step>
+</scenario>
+<scenario keyword="Scenario:" title="Scenario for Transaction from one account to another with valid data">
+<step outcome="successful">Given Account details of Employees &quot;3&quot; &quot;2&quot;</step>
+<step outcome="successful">When I Enter Transaction Details as &quot;3&quot; &quot;2&quot; &quot;10000&quot;</step>
+<step outcome="successful">Then Check Whether Transaction Details as &quot;3&quot; &quot;2&quot; &quot;10000&quot; are present</step>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

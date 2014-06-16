@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.943 sec <<< FAILURE! - in TestSuite
+run(com.atmecs.EmployeeManagementTest.StoryRunner)  Time elapsed: 3.736 sec  <<< FAILURE!
+org.jbehave.core.embedder.Embedder$RunningStoriesFailed: Failures in running stories: ReportsCount[stories=1,storiesNotAllowed=0,storiesPending=0,scenarios=58,scenariosFailed=55,scenariosNotAllowed=0,scenariosPending=0,stepsFailed=55]
+	at org.jbehave.core.embedder.Embedder$ThrowingRunningStoriesFailed.handleFailures(Embedder.java:525)
+	at org.jbehave.core.embedder.Embedder.handleFailures(Embedder.java:269)
+	at org.jbehave.core.embedder.Embedder.generateReportsView(Embedder.java:256)
+	at org.jbehave.core.embedder.Embedder.generateReportsView(Embedder.java:237)
+	at org.jbehave.core.embedder.Embedder.runStoriesAsPaths(Embedder.java:213)
+	at org.jbehave.core.junit.JUnitStory.run(JUnitStory.java:24)
+	at com.atmecs.EmployeeManagementTest.StoryRunner.run(StoryRunner.java:17)
+

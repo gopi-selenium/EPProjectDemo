@@ -1,0 +1,438 @@
+Sample story
+(com/atmecs/EmployeeManagementTest/story_runner.story)
+Narrative:
+In order to communicate effectively to the business some functionality
+As a development team
+I want to use Behaviour-Driven Development
+Scenario: A scenario Insert A data in Employee Table but it missing a Last Name , Department Name and Designation Name
+When I Enter Employee Details as "Himansu" "" "" "" (FAILED)
+(ServerStatusException 
+	data: ASObject(391830888){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details Entered as "Himansu" "" "" "" (NOT PERFORMED)
+
+Scenario: A scenario Insert A data in Employee Table but it missing a First Name ,Department Name and Designation Name
+When I Enter Employee Details as "" "Gupta" "" "" (FAILED)
+(ServerStatusException 
+	data: ASObject(607318565){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details Entered as "" "Gupta" "" "" (NOT PERFORMED)
+
+Scenario: A scenario Insert A data in Employee Table but it missing a First Name ,Last Name and Designation Name
+When I Enter Employee Details as "" "" "QA" "" (FAILED)
+(ServerStatusException 
+	data: ASObject(223709652){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details Entered as "" "" "QA" "" (NOT PERFORMED)
+
+Scenario: A scenario Insert A data in Employee Table but it missing a First Name ,Last Name and Department Name
+When I Enter Employee Details as "" "" "" "ENGINEER" (FAILED)
+(ServerStatusException 
+	data: ASObject(806724243){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details Entered as "" "" "" "ENGINEER" (NOT PERFORMED)
+
+Scenario: A scenario Insert A data in Employee Table but it missing a Department Name and Designation Name
+When I Enter Employee Details as "Himansu" "Gupta" "" "" (FAILED)
+(ServerStatusException 
+	data: ASObject(636800828){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details Entered as "Himansu" "Gupta" "" "" (NOT PERFORMED)
+
+Scenario: A scenario Insert A data in Employee Table but it missing a Last Name and Designation Name
+When I Enter Employee Details as "Himansu" "" "QA" "" (FAILED)
+(ServerStatusException 
+	data: ASObject(1965681841){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details Entered as "Himansu" "" "QA" "" (NOT PERFORMED)
+
+Scenario: A scenario Insert A data in Employee Table but it missing a Last Name and Department Name
+When I Enter Employee Details as "Himansu" "" "" "ENGINEER" (FAILED)
+(ServerStatusException 
+	data: ASObject(130646182){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details Entered as "Himansu" "" "" "ENGINEER" (NOT PERFORMED)
+
+Scenario: A scenario Insert A data in Employee Table but it missing a First Name and Designation Name
+When I Enter Employee Details as "" "Gupta" "QA"  "" (FAILED)
+(ServerStatusException 
+	data: ASObject(993399025){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details Entered as "" "Gupta" "QA" "" (NOT PERFORMED)
+
+Scenario: A scenario Insert A data in Employee Table but it missing a First Name and Department Name
+When I Enter Employee Details as "" "Gupta" "" "ENGINEER" (FAILED)
+(ServerStatusException 
+	data: ASObject(457668026){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details Entered as "" "Gupta" "" "ENGINEER" (NOT PERFORMED)
+
+Scenario: A scenario Insert A data in Employee Table but it missing a  First Name and Last Name
+When I Enter Employee Details as "" "" "QA" "ENGINEER" (FAILED)
+(ServerStatusException 
+	data: ASObject(1855212917){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details Entered as "" "" "QA" "ENGINEER" (NOT PERFORMED)
+
+Scenario: A scenario Insert A data in Employee Table but it missing a Designation Name
+When I Enter Employee Details as "Himansu" "Gupta" "QA" "" (FAILED)
+(ServerStatusException 
+	data: ASObject(1442645587){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details Entered as "Himansu" "Gupta" "QA" "" (NOT PERFORMED)
+
+Scenario: A scenario Insert A data in Employee Table but it missing a Department Name
+When I Enter Employee Details as "Himansu" "Gupta" "" "ENGINEER" (FAILED)
+(ServerStatusException 
+	data: ASObject(2041928869){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details Entered as "Himansu" "Gupta" "" "ENGINEER" (NOT PERFORMED)
+
+Scenario: A scenario Insert A data in Employee Table but it missing a Last Name
+When I Enter Employee Details as "Himansu" "" "QA" "ENGINEER" (FAILED)
+(ServerStatusException 
+	data: ASObject(1136631276){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details Entered as "Himansu" "" "QA" "ENGINEER" (NOT PERFORMED)
+
+Scenario: A scenario Insert A data in Employee Table but it missing a First Name
+When I Enter Employee Details as "" "Gupta" "QA" "ENGINEER" (FAILED)
+(ServerStatusException 
+	data: ASObject(1870004792){message=java.lang.Exception : Employee has Null Values, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details Entered as "" "Gupta" "QA" "ENGINEER" (NOT PERFORMED)
+
+Scenario: A scenario Insert A data in Employee Table All details
+When I Enter Employee Details as "Himansu" "Gupta" "QA" "ENGINEER"
+Then Check Whether Employee Details Entered as "Himansu" "Gupta" "QA" "ENGINEER"
+
+Scenario: Scenario for updating data in Employee Table but it is missing First Name, Last Name , Department Name and Designation Name
+When I Update Employee Details as "1" "" "" "" "" (FAILED)
+(ServerStatusException 
+	data: ASObject(188674936){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details are Updated as "1" "" "" "" "" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Employee ID, Last Name , Department Name and Designation Name
+When I Update Employee Details as "" "Himanshu" "" "" "" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Employee Details are Updated as "" "Himanshu" "" "" "" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Employee ID, First Name, Department Name and Designation Name
+When I Update Employee Details as "" "" "Gupta" "" "" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Employee Details are Updated as "" "" "Gupta" "" "" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Employee ID, First Name, Last Name and Designation Name
+When I Update Employee Details as "" "" "" "QA" "" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Employee Details are Updated as "" "" "" "QA" "" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Employee ID, First Name ,Last Name and Department Name
+When I Update Employee Details as "" "" "" "" "ENGINEER" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Employee Details are Updated as "" "" "" "" "ENGINEER" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Last Name , Department Name and Designation Name
+When I Update Employee Details as "1" "Himanshu" "" "" "" (FAILED)
+(ServerStatusException 
+	data: ASObject(832426597){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details are Updated as "1" "Himanshu" "" "" "" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing First Name , Department Name and Designation Name
+When I Update Employee Details as "1" "" "Gupta" "" "" (FAILED)
+(ServerStatusException 
+	data: ASObject(766611234){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details are Updated as "1" "" "Gupta" "" "" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing First name Last Name and Designation Name
+When I Update Employee Details as "1" "" "" "QA" "" (FAILED)
+(ServerStatusException 
+	data: ASObject(57151564){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details are Updated as "1" "" "" "QA" "" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing First Name Last Name and Department Name
+When I Update Employee Details as "1" "" "" "" "ENGINEER" (FAILED)
+(ServerStatusException 
+	data: ASObject(2041865635){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details are Updated as "1" "" "" "" "ENGINEER" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Employee ID, Department Name and Designation Name
+When I Update Employee Details as "" "Himanshu" "Gupta" "" "" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Employee Details are Updated as "" "Himanshu" "Gupta" "" "" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Employee ID, Last Name and Designation Name
+When I Update Employee Details as "" "Himanshu" "" "QA" "" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Employee Details are Updated as "" "Himanshu" "" "QA" "" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Employee ID, Last Name and Department Name
+When I Update Employee Details as "" "Himanshu" "" "" "ENGINEER" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Employee Details are Updated as "" "Himanshu" "" "" "ENGINEER" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Employee ID, First Name and Designation Name
+When I Update Employee Details as "" "" "Gupta" "QA"  "" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Employee Details are Updated as "" "" "Gupta" "QA" "" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Employee ID, First Name and Department Name
+When I Update Employee Details as "" "" "Gupta" "" "ENGINEER" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Employee Details are Updated as "" "" "Gupta" "" "ENGINEER" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Employee ID,  First Name and Last Name
+When I Update Employee Details as "" "" "" "QA" "ENGINEER" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Employee Details are Updated as "" "" "" "QA" "ENGINEER" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Department Name and Designation Name
+When I Update Employee Details as "1" "Himanshu" "Gupta" "" "" (FAILED)
+(ServerStatusException 
+	data: ASObject(819613959){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details are Updated as "1" "Himanshu" "Gupta" "" "" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Last Name and Designation Name
+When I Update Employee Details as "1" "Himanshu" "" "QA" "" (FAILED)
+(ServerStatusException 
+	data: ASObject(1215013613){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details are Updated as "1" "Himanshu" "" "QA" "" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Last Name and Department Name
+When I Update Employee Details as "1" "Himanshu" "" "" "ENGINEER" (FAILED)
+(ServerStatusException 
+	data: ASObject(171870112){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details are Updated as "1" "Himanshu" "" "" "ENGINEER" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing First Name and Designation Name
+When I Update Employee Details as "1" "" "Gupta" "QA" "" (FAILED)
+(ServerStatusException 
+	data: ASObject(1884712731){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details are Updated as "1" "" "Gupta" "QA" "" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing First Name and Department Name
+When I Update Employee Details as "1" "" "Gupta" "" "ENGINEER" (FAILED)
+(ServerStatusException 
+	data: ASObject(1091847640){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details are Updated as "1" "" "Gupta" "" "ENGINEER" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing First Name and Last Name
+When I Update Employee Details as "1" "" "" "QA" "ENGINEER" (FAILED)
+(ServerStatusException 
+	data: ASObject(1822452790){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details are Updated as "1" "" "" "QA" "ENGINEER" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Employee ID and Designation Name
+When I Update Employee Details as "" "Himanshu" "Gupta" "QA" "" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Employee Details are Updated as "" "Himanshu" "Gupta" "QA" "" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Employee ID and Department Name
+When I Update Employee Details as "" "Himanshu" "Gupta" "" "ENGINEER" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Employee Details are Updated as "" "Himanshu" "Gupta" "" "ENGINEER" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Employee ID and Last Name
+When I Update Employee Details as "" "Himanshu" "" "QA" "ENGINEER" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Employee Details are Updated as "" "Himanshu" "" "QA" "ENGINEER" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Employee ID and First Name
+When I Update Employee Details as "" "" "Gupta" "QA" "ENGINEER" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Employee Details are Updated as "" "" "Gupta" "QA" "ENGINEER" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Employee ID
+When I Update Employee Details as "" "Himanshu" "Gupta" "QA" "ENGINEER" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Employee Details are Updated as "" "Himanshu" "Gupta" "QA" "ENGINEER" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing First Name
+When I Update Employee Details as "2" "" "Gupta" "QA" "ENGINEER" (FAILED)
+(ServerStatusException 
+	data: ASObject(1810768530){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details are Updated as "2" "" "Gupta" "QA" "ENGINEER" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Last Name
+When I Update Employee Details as "2" "Himanshu" "" "QA" "ENGINEER" (FAILED)
+(ServerStatusException 
+	data: ASObject(2055812419){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details are Updated as "2" "Himanshu" "" "QA" "ENGINEER" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Department Name
+When I Update Employee Details as "2" "Himanshu" "Gupta" "" "ENGINEER" (FAILED)
+(ServerStatusException 
+	data: ASObject(1089682910){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details are Updated as "2" "Himanshu" "Gupta" "" "ENGINEER" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table but it is missing Designation Name
+When I Update Employee Details as "2" "Himanshu" "Gupta" "QA" "" (FAILED)
+(ServerStatusException 
+	data: ASObject(707006819){message=java.lang.Exception : Update values has Null ,update failed..., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details are Updated as "2" "Himanshu" "Gupta" "QA" "" (NOT PERFORMED)
+
+Scenario: Scenario for updating data in Employee Table All details
+When I Update Employee Details as "2" "Himanshu" "Gupta" "QA" "ENGINEER"
+Then Check Whether Employee Details are Updated as "2" "Himanshu" "Gupta" "QA" "ENGINEER"
+
+Scenario: Scenario for Deleting data in Employee Table when it is missing an Employee ID
+When I Delete Employee Details of "" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Employee Details of "" is still present (NOT PERFORMED)
+
+Scenario: Scenario for Deleting data in Employee Table when it is having an invalid Employee ID
+When I Delete Employee Details of "00" (FAILED)
+(ServerStatusException 
+	data: ASObject(1593424881){message=java.lang.Exception : Employee has 0 Values,...., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details of "00" is still present (NOT PERFORMED)
+
+Scenario: Scenario for Deleting data in Employee Table when it is having wrong Employee ID
+When I Delete Employee Details of "1251" (FAILED)
+(ServerStatusException 
+	data: ASObject(1483910808){message=java.lang.Exception : No Such Employee ,...., rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Employee Details of "1251" is still present (NOT PERFORMED)
+
+Scenario: Scenario for Deleting data in Employee Table when it is having valid Employee ID
+When I Delete Employee Details of "9"
+Then Check Whether Employee Details of "9" is still present (FAILED)
+(java.lang.NullPointerException)
+
+Scenario: Scenario for Transaction from one account to another but it is missing an Destination Employee eID and amount
+Given Account details of Employees "2" "3"
+When I Enter Transaction Details as "2" "" "" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Transaction Details as "2" "" "" are present (NOT PERFORMED)
+
+Scenario: Scenario for Transaction from one account to another but it is missing an source Employee ID and and amount
+Given Account details of Employees "2" "3"
+When I Enter Transaction Details as "" "3" "" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Transaction Details as "" "3" "" are present (NOT PERFORMED)
+
+Scenario: Scenario for Transaction from one account to another but it is missing an source Employee ID and Destination Employe ID
+Given Account details of Employees "2" "3"
+When I Enter Transaction Details as "" "" "1000" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Transaction Details as "" "" "1000" are present (NOT PERFORMED)
+
+Scenario: Scenario for Transaction from one account to another but it is missing an amount
+Given Account details of Employees "2" "3"
+When I Enter Transaction Details as "2" "3" "" (FAILED)
+(org.jbehave.core.steps.ParameterConverters$ParameterConvertionFailed: )
+Then Check Whether Transaction Details as "2" "3" "" are present (NOT PERFORMED)
+
+Scenario: Scenario for Transaction from one account to another but it is having an invalid source Employee ID
+Given Account details of Employees "2" "3"
+When I Enter Transaction Details as "556" "3" "1000" (FAILED)
+(ServerStatusException 
+	data: ASObject(1280764923){message=java.lang.Exception : Employee Id does not Exist, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Transaction Details as "556" "3" "1000" are present (NOT PERFORMED)
+
+Scenario: Scenario for Transaction from one account to another but it is having an invalid Amount
+Given Account details of Employees "2" "3"
+When I Enter Transaction Details as "2" "3" "-1000" (FAILED)
+(ServerStatusException 
+	data: ASObject(1136603367){message=java.lang.Exception : Invalid Transfer Amount, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Transaction Details as "2" "3" "-1000" are present (NOT PERFORMED)
+
+Scenario: Scenario for Transaction from one account to another but it is having more Amount than Balance Amount
+Given Account details of Employees "3" "2"
+When I Enter Transaction Details as "3" "2" "100000" (FAILED)
+(ServerStatusException 
+	data: ASObject(1709320528){message=java.lang.Exception : Insufficient Balance for this Transaction, rootCause=java.lang.Exception, details=null, code=Server.Processing}
+	HttpResponseInfo: HttpResponseInfo 
+	code: 200
+	message: OK)
+Then Check Whether Transaction Details as "3" "2" "100000" are present (NOT PERFORMED)
+
+Scenario: Scenario for Transaction from one account to another with valid data
+Given Account details of Employees "3" "2"
+When I Enter Transaction Details as "3" "2" "10000"
+Then Check Whether Transaction Details as "3" "2" "10000" are present
+
+
